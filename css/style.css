@@ -44,6 +44,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--hero-color);
   background-color: var(--accent-color);
+  border: none;
 }
 
 /* ==Header==*/
@@ -163,6 +164,51 @@ body {
   color: var(--text-color);
 }
 
-/*====Портфолио====*/
+/*====Portfolio====*/
+/* Filter */
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  border: none;
 
-/*====Портфолио====*/
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-color);
+  background: #f5f4fa;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--hero-color);
+  background-color: var(--accent-color);
+}
+/* Work list */
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: var(--title-color);
+}
+.project-type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+
+  letter-spacing: 0.03em;
+
+  color: var(--text-color);
+}
+.projekt-discription {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.555;
+
+  letter-spacing: 0.03em;
+
+  color: var(--hero-color);
+  background: rgba(33, 150, 243, 0.9);
+}
