@@ -6,6 +6,10 @@
   --accent-color: #2196f3;
   --logo-color: #000000;
   --hero-color: #ffffff;
+  /* --portfolio-prodescription-bg: rgba(33, 150, 243, 0.9); */
+  --filbut-team-bg: #f5f4fa;
+  --hero-footer-bg: #2f303a;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -55,10 +59,13 @@ body {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.logo-in-header {
   color: var(--logo-color);
 }
-.logo-in-color {
-  color: var(--accent-color);
+.logo-in-footer {
+  color: var(--hero-color);
 }
 /* Navigation */
 .navigation-link {
@@ -68,15 +75,20 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
+.navigation-link.current {
+  color: var(--accent-color);
+}
 
 /* ==Footer==*/
+.footer {
+  background: var(--hero-footer-bg);
+}
 .company-adress {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
 
   letter-spacing: 0.03em;
-  background-color: #757575;
   color: var(--hero-color);
 }
 .adress {
@@ -88,12 +100,14 @@ body {
   line-height: 1.714;
 
   letter-spacing: 0.03em;
-  background-color: #757575;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contacts-color);
 }
 
 /*====Studio====*/
 /* Hero */
+.hero-section {
+  background: var(--hero-footer-bg);
+}
 .hero {
   font-weight: 900;
   font-size: 44px;
@@ -101,8 +115,6 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  background-color: #757575;
 
   color: var(--hero-color);
 }
@@ -136,6 +148,9 @@ body {
 }
 
 /* Our team */
+.team-section {
+  background: var(--filbut-team-bg);
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -176,7 +191,7 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--title-color);
-  background: #f5f4fa;
+  background: var(--filbut-team-bg);
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -202,7 +217,7 @@ body {
 
   color: var(--text-color);
 }
-.projekt-discription {
+.projekt-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.555;
@@ -210,5 +225,5 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--hero-color);
-  background: rgba(33, 150, 243, 0.9);
+  background: var(--portfolio-prodescription-bg);
 }
